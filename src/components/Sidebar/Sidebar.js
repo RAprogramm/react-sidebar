@@ -22,6 +22,11 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  &:hover {
+    font-size: 2.5rem;
+    transition: 300ms;
+  }
 `
 
 const SidebarNav = styled.nav`
@@ -33,12 +38,27 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-  transition: 500ms;
+  transition: 300ms;
   z-index: 10;
 `
 
 const SidebarWrap = styled.div`
   width: 100%;
+`
+
+const NavTitle = styled.div`
+  color: violet;
+  font-family: Caveat;
+  font-size: 3rem;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+
+  &:hover {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px #632ce4;
+    transition: 300ms;
+  }
 `
 
 const Sidebar = () => {
@@ -53,6 +73,7 @@ const Sidebar = () => {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
+          <NavTitle>Side Bar</NavTitle>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
