@@ -1,8 +1,11 @@
-function App() {
+import Sidebar from './components/Sidebar/Sidebar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+const App = () => {
   return (
-    <div className='App'>
-      <h1>hello</h1>
-    </div>
+    <Router>
+      <Sidebar />
+    </Router>
   )
 }
 
