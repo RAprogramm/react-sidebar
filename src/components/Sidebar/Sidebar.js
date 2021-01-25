@@ -22,10 +22,11 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: all 300ms ease-in;
 
   &:hover {
     font-size: 2.5rem;
-    transition: 300ms;
+    transition: all 300ms ease-out;
   }
 `
 
@@ -38,7 +39,7 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-  transition: 300ms;
+  transition: 400ms;
   z-index: 10;
 `
 
@@ -49,15 +50,16 @@ const SidebarWrap = styled.div`
 const NavTitle = styled.div`
   color: violet;
   font-family: Caveat;
-  font-size: 3rem;
+  font-size: 3.5rem;
   position: absolute;
   right: 0;
   margin-right: 1rem;
+  text-shadow: 1px 5px 5px #632ce4;
+  transition: all 400ms ease-in;
 
   &:hover {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px #632ce4;
-    transition: 300ms;
+    text-shadow: 1px 5px 5px #ee82ee;
+    transition: all 400ms ease-out;
   }
 `
 
