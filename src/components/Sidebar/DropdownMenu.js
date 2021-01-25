@@ -15,6 +15,7 @@ const SidebarLink = styled(Link)`
   font-size: 28px;
   font-family: Caveat;
   text-shadow: 2px 2px 1px #632ce4;
+  transition: all 300ms ease-in;
 
   &:hover {
     background: #252831;
@@ -40,12 +41,12 @@ const DropdownLink = styled(Link)`
   font-size: 25px;
   font-family: Caveat;
   text-shadow: 2px 2px 1px #632ce4;
-  transition: 500ms;
+  transition: all 300ms ease-out;
 
   &:hover {
     background: linear-gradient(to right, #632ce4, #ee82ee);
     cursor: pointer;
-    transition: 300ms;
+    transition: all 300ms ease-in;
     text-shadow: 2px 2px 2px black;
   }
 `
